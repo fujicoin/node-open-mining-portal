@@ -1,6 +1,49 @@
-## This repo is looking for maintainers! Please reach out if interested.
+#### NOMP for Fujicoin
 
---------
+This repository is NOMP which integrated Fujicoin.
+The following three files were added to the original NOMP repository.
+It is only these three files that you should check and modify the contents.
+* config.json
+* coins/fujicoin.json
+* pool_configs/fujicoin.json
+
+```
+apt-get update
+apt-get install git libssl-dev
+
+git clone https://github.com/fujicoin/node-open-mining-portal.git nomp
+cd nomp
+npm update
+npm install forever -g
+
+For test:
+node init.js
+
+For operation:
+forever start init.js
+```
+
+#### How to install nodejs
+
+Old version of node are required.
+```
+apt-get install nodejs
+apt-get install npm
+npm cache clean
+npm install n -g
+n 0.10.30
+
+apt-get purge -y nodejs npm
+ln -sf /usr/local/bin/node /usr/bin/node
+ln -sf /usr/local/bin/node /usr/sbin/node
+ln -sf /usr/local/bin/npm /usr/bin/npm
+ln -sf /usr/local/bin/npm /usr/sbin/npm
+
+node -v
+v0.10.30
+npm -v
+1.4.21
+```
 
 
 # NOMP ![NOMP Logo](http://zone117x.github.io/node-open-mining-portal/logo.svg "NOMP Logo")

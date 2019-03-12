@@ -1,0 +1,9 @@
+{
+    "name": "FujiCoin",
+    "symbol": "FJC",
+    "peerMagic": "66756a69",
+    "algorithm": "scrypt-n",
+    "timeTable": {
+        "2048": 1389306217
+    }
+}
