@@ -14,7 +14,7 @@ apt-get install git libssl-dev
 git clone https://github.com/fujicoin/node-open-mining-portal.git nomp
 cd nomp
 npm update
-npm install forever -g
+npm install forever@v1.0.0 -g
 
 For test:
 node init.js
